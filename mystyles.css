@@ -183,7 +183,6 @@ figcaption {
 .quote {
     
     background-image: url(Pictures/background.jpg);
-    background-color: #e61515;
     background-size:50rem,1rem;
     background-repeat: repeat;
     color: rgb(255, 255, 255);
