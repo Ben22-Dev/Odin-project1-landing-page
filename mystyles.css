@@ -233,7 +233,7 @@ button {
 }
 
 @keyframes buttons {
-    from {background: rgb(200, 245, 197)};
+    from {background: rgb(210, 245, 245)};
     to {background: rgb(6, 109, 37)};
 }
 
