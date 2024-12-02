@@ -1,47 +1,40 @@
 html {
     font-size:16px;
 }
-
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 body {
-    background-color: #000000;
     color:whitesmoke;
     font-family: Roboto;
     letter-spacing: 0.12rem;
     line-height: 1.5rem;
-    margin-left:auto;
-    margin-right: auto;
-    overflow-x: hidden;
+    background-color: rgb(204, 251, 253);
 }
-
 /*All pictures*/
 .pic {
     width:100%;
     height:100%;
 }
-
 /*styling left navigation (logo pic and logo page name)*/
 .left_nav {
-    height: 100%;
+    width:40%;
     display: flex;
     margin-left:1rem;
 }
-
 .page_logo_pic {
     width:3.2rem;
     height:80%;
     margin: auto 0 auto 0;
 }
-
 .page_logo_name {
     margin-left: 2rem;
     width:10rem;
     position: relative;
 }
-
 .page_logo_name1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
@@ -52,7 +45,6 @@ body {
     color:rgb(68, 133, 142);
     text-shadow: 0.2rem -0.1rem rgb(42, 91, 103);
 }
-
 .page_logo_name2 {
     font-family: sans-serif;
     display: block;
@@ -63,126 +55,124 @@ body {
     color:rgb(68, 133, 142);
     text-shadow: 0.2rem -0.1rem rgb(42, 91, 103);
 }
-
 /*styling right navigation*/
+nav {
+    width:40%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right:1rem; 
+}
 .right_nav {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap:2rem;
-    margin-right:1rem;
 }
-
 .links {
     padding:1.72rem;
     background-color: rgb(0, 20, 0);
     text-decoration: none;
     color:white;
 }
-
 .links:hover {
     background-color: rgb(68, 107, 50);
 }
 .links:active {
     background-color: rgb(56, 91, 67);
 }
-
 /*Styling the whole top bar*/
-.top_bar {
-    position: fixed;
+#section1_top_bar {
+    position: sticky;
     top:0;
-    left:0;
-    right:0;
     z-index:1;
+}
+.top_bar {
+    width:100%;
     background-color: rgb(24, 62, 65);
     height:5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
-
 /*Styling the introduction section*/
 .introduction {
-    position: relative;
-    background-color: rgb(210, 245, 245);
+    background-color: rgb(168, 223, 223);
     color:black;
-    margin-top: 5.05rem;
     font-size: 1.2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items:center;
-    padding: 0.5rem 0 1.5rem 0;
+    gap:2rem;
+    padding:2.5rem;
 }
-
 .introduction_text {
-    margin-left: 2.2rem;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
 }
-
 .introduction_text p {
     max-width:35rem;
     flex-shrink: 1;
 }
-
 .introduction h1 {
   color:rgb(64, 84, 91);
 }
-
 .introduction_text {
     flex-shrink: 1;
 }
-
-
 .introduction_pic {
-    width:35rem;
-    height:20rem;
-    min-width:35rem;
-    margin: auto 0 auto 0;
+    width:50%;
+    margin: auto;
+}
+.pic {
+    width:100%;
+    background-image: url(Pictures/small-make_it.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 /*styling section3_stages*/
 #main_content {
-    background-color: white;
     color:black;
-    padding-top: 3rem;
-}
-
-.section3_pictures  {
+    margin:3rem 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    align-content: center;
+    flex-direction: column;
+    gap:2rem;
 }
-
+.section3_pictures  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap:1rem;
+    figure {
+        justify-self: center;
+    }
+}
 #main_content h1 {
     text-align: center;
     font-size: 2.0rem;
 }
-
 #main_content p {
     text-align: center;
     font-weight: bold;
 }
-
 .goal_stages { 
     width:14rem;
 }
-
 .goal_stages_pic {
     height:10rem;
 }
-
 .goal_stages_pic img {
     border-radius: 10%;
     border:5px solid rgb(210, 245, 245);
 }
-
 figcaption {
     text-align: center;
 }
-
 /*Styling the quote (div) and the main blockquote*/
-.quote {
-    
+.quote {   
     background-image: url(Pictures/background.jpg);
+    background-color: #e61515;
     background-size:50rem,1rem;
     background-repeat: repeat;
     color: rgb(255, 255, 255);
@@ -190,7 +180,6 @@ figcaption {
     justify-content: center;
     align-items: center;
 }
-
 blockquote {
     background-color: #00000067;
     font-size: 1.8rem;    
@@ -198,8 +187,6 @@ blockquote {
     text-align: center;
     line-height: 2.5rem;
 }
-
-
 /*Styling call to action part*/
 .parent_call_to_action{
     height:20rem;
@@ -207,7 +194,6 @@ blockquote {
     justify-content: space-evenly;
     align-items: center;
 }
-
 .call_to_action {
     background-color: rgb(128, 233, 237);
     width: 99%;
@@ -217,128 +203,72 @@ blockquote {
     align-items: center;
     padding: 4rem 2rem 4rem 2rem;
 }
-
 .call_to_action_text span:first-child {
     font-weight: bold;
     font-size: 1.5rem;
 }
-
 button {
+    width: max-content;
     margin-right:0;
-    border:1px solid rgb(89, 113, 113);
+    border:1px solid transparent;
     border-radius: 0.5rem;    
     padding: 0.5rem 2rem 0.5rem 2rem;
     animation:buttons 1s infinite;
 }
-
 @keyframes buttons {
-    from {background: rgb(210, 245, 245)};
+    from {background: rgb(200, 245, 197)};
     to {background: rgb(6, 109, 37)};
 }
-
 footer {
     margin-top:-0.95rem;
-    background-color: rgb(210, 245, 245);
+    background-color: rgb(128, 233, 237);
     color: rgb(5, 4, 4);
 }
-
-@media (max-width:855px) and (min-width:755px) {
+@media(width>=1920px) {
+    html {
+    font-size: 24px;
+    }
+}
+@media(width>=1440px) and (width<1920px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media(width>=1024px) and (width<1440px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media(width>=768px) and (width<1024px) {
     html {
         font-size: 14px;
     }
 }
-
-@media (max-width:755px) and (min-width:655px) {
+@media(width<768px) {
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .introduction_pic {
+        width: 80%;
+    }  
+    .introduction_text{
+        width:80%;
+    }
+}
+@media (width>=480px) and (width<768px) {
     html {
         font-size: 12px;
     }
 }
-
-@media (max-width:655px) and (min-width:510px) {
+@media (width>=320px) and (width<480px) {
     html {
-        font-size: 13px;
-    }
-    .introduction {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .introduction_pic {
-        margin-left:-4rem;
-    }
-    .links {
-        padding:1.72rem 0.5rem 1.72rem 0.5rem;
-        background-color: rgb(0, 20, 0);
+        font-size: 12px;
     }
 }
-
-@media (max-width:510px) and (min-width:410px) {
+@media (width<320px) {
     html {
-        font-size: 11px;
-    }
-    .introduction {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .introduction_pic {
-        margin-left:-4rem;
-    }
-    .links {
-        padding:1.72rem 0.1rem 1.72rem 0.1rem;
-        background-color: rgb(0, 20, 0);
-    }
-}
-
-@media (max-width:410px) and (min-width:320px) {
-    html {
-        font-size: 9px;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .introduction {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .introduction_pic {
-        margin:auto;
-    }
-    .links {
-        padding:1.72rem 0.1rem 1.72rem 0.1rem;
-        background-color: rgb(0, 20, 0);
-    }
-   
-   .right_nav .links:last-child {
-        display: none;
-    }
-}
-
-@media (max-width:320px) {
-    html {
-        font-size: 7px;
-        overflow-x: scroll;
-    }
-
-    .introduction {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .introduction_pic {
-        margin:auto;
-    }
-    .links {
-        padding:1.72rem 0.1rem 1.72rem 0.1rem;
-        background-color: rgb(0, 20, 0);
-    }
-   
-   .right_nav .links:last-child {
-        display: none;
+        font-size: 10px;
     }
 }
