@@ -160,9 +160,10 @@ nav {
 }
 .goal_stages_pic {
     height:10rem;
+    border-radius: 100%;
 }
 .goal_stages_pic img {
-    border-radius: 10%;
+    border-radius: 15%;
 }
 .goal_stages_pic.one {
     background-image: url(Pictures/small-isolation.jpg);
