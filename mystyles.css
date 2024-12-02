@@ -157,6 +157,11 @@ nav {
 }
 .goal_stages { 
     width:14rem;
+    transition: transform 500ms;
+}
+.goal_stages:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .goal_stages_pic {
     height:10rem;
