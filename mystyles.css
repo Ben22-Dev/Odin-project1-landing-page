@@ -124,8 +124,12 @@ nav {
 .introduction_pic {
     width:50%;
     margin: auto;
+    transition: transform 500ms;
 }
-.pic.one {
+.introduction_pic:hover {
+    transform: scale(1.1);
+}
+.make_it_div {
     background-image: url(Pictures/small-make_it.jpg);
     background-repeat: no-repeat;
     background-position: center;
