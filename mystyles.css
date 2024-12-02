@@ -127,10 +127,11 @@ nav {
 }
 .pic {
     width:100%;
+    /*
     background-image: url(Pictures/small-make_it.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 /*styling section3_stages*/
 #main_content {
