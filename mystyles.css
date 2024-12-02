@@ -125,13 +125,11 @@ nav {
     width:50%;
     margin: auto;
 }
-.pic {
-    width:100%;
-    /*
+.pic.one {
     background-image: url(Pictures/small-make_it.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover; 
 }
 /*styling section3_stages*/
 #main_content {
@@ -165,7 +163,23 @@ nav {
 }
 .goal_stages_pic img {
     border-radius: 10%;
-    border:5px solid rgb(210, 245, 245);
+}
+.goal_stages_pic.one {
+    background-image: url(Pictures/small-isolation.jpg);
+}
+.goal_stages_pic.two {
+    background-image: url(Pictures/small-distractions.jpg);
+}
+.goal_stages_pic.three {
+    background-image: url(Pictures/small-jump.jpg);
+}
+.goal_stages_pic.four {
+    background-image: url(Pictures/small-panic.jpg);
+}
+.goal_stages_pic {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 figcaption {
     text-align: center;
