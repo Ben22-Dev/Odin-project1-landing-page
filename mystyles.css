@@ -113,7 +113,6 @@ nav {
 }
 .introduction_text p {
     max-width:35rem;
-    flex-shrink: 1;
 }
 .introduction h1 {
   color:rgb(64, 84, 91);
@@ -197,7 +196,7 @@ figcaption {
 /*Styling the quote (div) and the main blockquote*/
 .quote {   
     background-image: url(Pictures/background.jpg);
-    background-color: #e61515;
+    background-color:black;
     background-size:50rem,1rem;
     background-repeat: repeat;
     color: rgb(255, 255, 255);
@@ -273,13 +272,19 @@ footer {
     .introduction {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        justify-content: start;
+        gap:1rem;
+        padding: 2rem;
     }  
     .introduction_pic {
-        width: 80%;
+        width: 95%;
     }  
     .introduction_text{
-        width:80%;
+        width:100%;
+    }
+    .introduction_text p {
+        max-width: unset;
     }
 }
 @media (width>=480px) and (width<768px) {
