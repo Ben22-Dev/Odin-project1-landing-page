@@ -302,3 +302,9 @@ footer {
         font-size: 10px;
     }
 }
+@media (height <= 320px) {
+    #nav_bar_ID {
+            width: 100% !important;
+            position:relative !important;
+    }
+}
