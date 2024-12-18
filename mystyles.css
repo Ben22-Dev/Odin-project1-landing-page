@@ -303,8 +303,7 @@ footer {
     }
 }
 @media (height <= 320px) {
-    #nav_bar_ID {
-            width: 100% !important;
+    #section1_top_bar  {
             position:relative !important;
     }
 }
